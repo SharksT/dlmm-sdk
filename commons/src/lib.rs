@@ -37,3 +37,8 @@ pub use account_filters::*;
 
 pub mod token_2022;
 pub use token_2022::*;
+
+// Re-export solana types for consumers that need commons-compatible types
+pub use solana_sdk::account::Account as SdkAccount;
+pub use solana_sdk::pubkey::Pubkey as SdkPubkey;
+pub use solana_sdk::clock::Clock as SdkClock;

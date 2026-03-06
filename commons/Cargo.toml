@@ -10,13 +10,15 @@ authors = ["tian <tian@racoons.dev>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-anchor-lang = { workspace = true }
-anchor-client = { workspace = true, features = ["async"] }
-anchor-spl = { workspace = true }
+anchor-lang = "0.32.1"
+anchor-client = { version = "0.32.1", features = ["async"] }
+anchor-spl = "0.32.1"
 anyhow = { workspace = true }
 tokio = { workspace = true, features = ["full", "parking_lot"] }
 bincode = { workspace = true }
-solana-sdk = { workspace = true }
+solana-sdk = "2"
+solana-rpc-client = "2"
+solana-rpc-client-api = "2"
 ruint = { workspace = true }
 num-traits = { workspace = true }
 num-integer = { workspace = true }
